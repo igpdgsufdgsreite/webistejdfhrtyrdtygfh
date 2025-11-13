@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LUNAR RECORDS LLC.</title>
+  <link rel="icon" type="image/jpg" href="povicon.png">
+  <meta name="description" content="LUNAR RECORDS LLC. — independent record label.">
+  <meta name="theme-color" content="#000000">
+  <style>
+    :root{
+      --bg:#000;--accent:#fff;--muted:#888;--card:#0a0a0a;--radius:20px;
+      font-family:'Helvetica Neue',Arial,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background-color:var(--bg);color:var(--accent);overflow-x:hidden;}
+    header{display:flex;justify-content:space-between;align-items:center;padding:30px 60px;position:fixed;top:0;width:100%;z-index:10;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);}
+    .logo{font-size:1.2rem;letter-spacing:2px;font-weight:700;}
+    nav a{color:var(--muted);margin-left:30px;text-decoration:none;font-weight:500;transition:color .3s;}
+    nav a:hover{color:var(--accent);}
+
+    .hero{height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:url('https://images.unsplash.com/photo-1565634476153-6399de51e826?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;position:relative;}
+    .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6);}
+    .hero-content{position:relative;z-index:2;}
+    .hero h1{font-size:4rem;font-weight:900;letter-spacing:4px;text-transform:uppercase;}
+    .hero p{color:var(--muted);margin-top:20px;max-width:600px;line-height:1.5;}
+
+    .events{padding:140px 60px 100px;max-width:1000px;margin:auto;}
+    .events h2{text-transform:uppercase;font-size:2rem;margin-bottom:40px;text-align:center;}
+    .event{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;padding:20px 0;}
+    .event time{color:var(--muted);font-weight:600;}
+    .event-title{font-weight:700;font-size:1.1rem;}
+    .event-location{color:var(--muted);font-size:0.9rem;}
+
+    .contact{padding:100px 60px;background:var(--card);text-align:center;}
+    .contact h2{text-transform:uppercase;font-size:2rem;margin-bottom:20px;}
+    .contact p{color:var(--muted);max-width:600px;margin:0 auto 30px;}
+    .btn{border:1px solid var(--accent);padding:12px 28px;background:transparent;color:var(--accent);border-radius:var(--radius);text-decoration:none;font-weight:600;transition:all .3s;}
+    .btn:hover{background:var(--accent);color:#000;}
+
+    footer{padding:40px 60px;text-align:center;color:var(--muted);border-top:1px solid #111;}
+
+    @media(max-width:768px){
+      header{padding:20px;flex-direction:column;gap:10px;}
+      .hero h1{font-size:2.5rem;}
+      .events{padding:100px 20px;}
+      .contact{padding:80px 20px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LUNAR RECORDS LLC.</div>
+    <nav>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>LUNAR RECORDS</h1>
+      <p>Dark sounds. Unfiltered energy. The future of underground music. Welcome to LUNAR RECORDS LLC.</p>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>For A&R submissions, contact, press or collabs — reach out to us via email.</p>
+    <a href="mailto:contact@lunarrecords.space" class="btn">contact@lunarrecords.space</a>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> LUNAR RECORDS LLC. — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
