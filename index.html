@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Lunar Records LLC. | Independent Music Label">
+    <meta property="og:description" content="Empowering artists through professional production, branding, and global distribution. Discover the future of sound.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lunarrecords.space">
+    
+    <title>Lunar Records LLC. | Independent Music Label</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="loader">
+        <div class="loader-text" data-text="INITIALIZING SYSTEM...">INITIALIZING...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <canvas id="space-canvas"></canvas>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <nav>
+        <div class="logo">LUNAR <span class="hollow">RECORDS LLC.</span></div>
+        <a href="contact.html" class="menu-btn" style="text-decoration: none; color: inherit; display: block;">CONTACT</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-wrapper">
+                    <span class="glitch" data-text="LUNAR">LUNAR</span>
+                    <span class="glitch sub" data-text="RECORDS LLC.">RECORDS LLC.</span>
+                </h1>
+                <p class="hero-subtitle">DEFINING THE SOUND OF PERFECTION</p>
+                <div class="scroll-indicator">
+                    <span>SCROLL TO EXPLORE</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="roster">
+            <h2 class="section-header">ARTIST ROSTER</h2>
+            <div class="card-container">
+                <div class="artist-card">
+                    <div class="card-inner">
+                        <h3>WALKER</h3>
+                        <p>GENRE: DARK SYNTH</p>
+                        <button class="listen-btn">LISTEN</button>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="card-inner">
+                        <h3>GHOST</h3>
+                        <p>GENRE: 808</p>
+                        <button class="listen-btn">LISTEN</button>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="card-inner">
+                        <h3>EVENT</h3>
+                        <p>GENRE: PIANO</p>
+                        <button class="listen-btn">LISTEN</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manifesto">
+            <div class="big-text">
+                WE ARE THE <span class="highlight">DARKNESS</span><br>
+                BETWEEN THE STARS.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">© 2026 LUNAR RECORDS LCC.</div>
+            <div class="copyright">EST. 2026 // SYSTEM ONLINE</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
